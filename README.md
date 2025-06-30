@@ -22,13 +22,21 @@ This is a machine learning-based stock trading system that predicts future stock
 ## How to use this model
 
 >> First Clone the repository
+
 >> Install dependencies by using pip install `pip install -r requirements.txt`
+
 >> Fetch and save stock data to CSV `python data_csv_saved_files.py --help`
+
 >> Edit one of the model files to accept the symbol you want
+
 >> Modify the model architecture as needed
->> Modify dataset preprocessing / history_points inside util.py 
+
+>> Modify dataset preprocessing / history_points inside util.py
+
 >> Train the model `python training_model_script.py` or `python initial_model.py`
+
 >>  Run the trading algorithm on the newly saved model `python stock_trade_algorithm.py`
+
 
 ## Visual Output
 >>  Predicted vs actual prices
