@@ -1,37 +1,42 @@
-# Stock Trading with Machine Learning
+# Integrating_ML_in-Stock_Market
+
 
 ## Overview
 
-A stock trading bot that uses machine learning to make price predictions.
+This is a machine learning-based stock trading system that predicts future stock prices using historical data and neural networks. Built for flexibility and customization, it enables users to train, test, and simulate trading strategies with ease.
+
+## Features
+-   Predict stock prices with deep learning models (LSTM, indicators)
+-   Fetch historical data via Alpha Vantage API
+-   Modular, customizable codebase
+-   Real-time trading simulation
+-   Visual insights and performance charts
 
 ## Requirements
 
 -   Python 3.5+
--   alpha_vantage
--   pandas
--   numpy
--   sklearn
--   keras
--   tensorflow
--   matplotlib
+-   Libraries: alpha_vantage, pandas, numpy, sklearn, keras, tensorflow, matplotlib
+  Install all dependencies: by `pip install -r requirements.txt`
 
-## Documentation
 
-[Blog Post](https://yacoubahmed.me/blog/stock-prediction-ml)
+## How to use this model
 
-[Medium Article](https://medium.com/towards-data-science/getting-rich-quick-with-machine-learning-and-stock-market-predictions-696802da94fe)
+>> First Clone the repository
+>> Install dependencies by using pip install `pip install -r requirements.txt`
+>> Fetch and save stock data to CSV `python data_csv_saved_files.py --help`
+>> Edit one of the model files to accept the symbol you want
+>> Modify the model architecture as needed
+>> Modify dataset preprocessing / history_points inside util.py 
+>> Train the model `python training_model_script.py` or `python initial_model.py`
+>>  Run the trading algorithm on the newly saved model `python stock_trade_algorithm.py`
 
-## Train your own model
+## Visual Output
+>>  Predicted vs actual prices
+>>  Model loss and accuracy
+>>  Technical analysis overlays
 
-1. Clone the repo
-2. Pip install the requirements `pip install -r requirements.txt`
-3. Save the stock price history to a csv file `python save_data_to_csv.py --help`
-4. Edit one of the model files to accept the symbol you want
-5. Edit model architecture
-6. Edit dataset preprocessing / history_points inside util.py
-7. Train the model `python tech_ind_model.py` or `python basic_model.py`
-8. Try the trading algorithm on the newly saved model `python trading_algo.py`
+## Learn more 
 
 ## License
 
-[GPL-3.0](https://www.gnu.org/licenses/quick-guide-gplv3.html)
+This project is released under the GPL-3.0 License.(https://www.gnu.org/licenses/quick-guide-gplv3.html)
